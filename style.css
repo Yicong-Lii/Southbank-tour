@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&family=Poppins:ital@1&display=swap');
+
 
 
 *{
@@ -87,15 +89,17 @@ footer{
     width: 100%;
     height: 120px;
     background-color: pink;
+    font-family: 'Dongle', sans-serif;
 }
 
 footer h2{
     text-align: center;
     color: white;
+    font-size: 25px;
 }
 
 footer ul{
-    margin-top: 12px;
+    margin-top: 0px;
     list-style: none;
     text-align: center;
 }
@@ -115,22 +119,52 @@ footer ul li img{
 
 
 
+/* breadcrumb */
+.breadcrumb{
+    padding: 10px;
+}
 
-/* Index --- main */
-article{
+.breadcrumb-item{
+    display: inline-block;
+}
 
-    background-color: deepskyblue;
-    height: 3000px;
+.breadcrumb-item span{
+    color: yellow;
+}
+
+.breadcrumb-item:not(:last-of-type)::after{
+    content: "/";
+    margin: 0 5px;
+    color: white;
 
 }
+
+.breadcrumb-link{
+    color: white;
+}
+
+.breadcrumb-link:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.breadcrumb-link--acitve{
+    color: pink;
+    font-weight: 200;
+}
+
+
+
+
 
 .hero{
 
 
-    margin-top: 4px;
-    background-image: url(imgs/brisbane-1440.jpeg);
-    max-width: 1440px;
-    height: 330px;
+    
+    background-image: url(imgs/hero.jpeg);
+    max-width: 100%;
+    height: 400px;
+    /* max-height: 1000px; */
 
     
 }
@@ -139,7 +173,7 @@ article{
 
     font-size: 50px;
     position: relative;
-    top:200px;
+    top:250px;
     margin-left: 30px;
     color: white;
 
@@ -149,19 +183,21 @@ article{
 
     font-size: 40px;
     position: relative;
-    top:200px;
+    top:250px;
     margin-left: 30px;
     color: white;
 
 }
 
+
 .introduction p{
     margin-left: 40px;
     margin-bottom: 50px;
     width: 80%;
-    font-size: 15px;
+    font-size: 25px;
     margin-top: 40px;
     color: white;
+    font-family: 'Dongle', sans-serif;
 }
 
 .introduction h2{
@@ -203,6 +239,7 @@ article{
 .card p{
     margin-top: 15px;
     text-align: center;
+    
 }
 
 .card-image{
@@ -244,9 +281,10 @@ article{
     margin-top: 100px;
     text-align: left;
     max-width: 800px;
-    font-size: 15px;
+    font-size: 22px;
     /* padding-bottom: 100px; */
     margin-left: 20px;
+    font-family: 'Dongle', sans-serif;
     /* text-align: center; */
 }
 
@@ -255,9 +293,10 @@ article{
     margin-top: 100px;
     text-align: left;
     max-width: 800px;
-    font-size: 15px;
+    font-size: 22px;
     /* padding-bottom: 100px; */
     margin-left: 20px;
+    font-family: 'Dongle', sans-serif;
     /* text-align: center; */
 }
 
@@ -268,23 +307,27 @@ article{
 
 
 
-/* location information */
-.location-information{
-    height: 1500px;
+
+
+
+
+
+/* detail */
+.detail-article{
+    height: 2000px;
 }
 
-.location-information h1{
+
+.detail-article h1{
     text-align: center;
     margin-top: 50px;
     color: white;
     font-size: 40px;
 }
 
-.location-information .information{
 
-}
 
-.location-information h2{
+.detail-article h2{
 
     text-align: center;
     margin-top: 50px;
@@ -293,11 +336,82 @@ article{
     
 }
 
+.information{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.information-img img{
+
+    margin-top: 10px;
+    max-width: 375px;
+    height: 330px;
+    border-radius: 18px 18px 18px 18px;
+
+}
+
+.information-text{
+    width: 375px;
+    height: 320px;
+    border-style: double double double double;
+    border-color: white;
+    background: white;
+    border-radius: 18px 18px 18px 18px;
+    margin-top: 20px;
+    font-family: 'Dongle', sans-serif;
+    
+}
+
+
+
+.information-text h3{
+
+    font-size: 35px;
+    text-align: center;
+    color: deepskyblue;
+    font-family: 'Dongle', sans-serif;
+}
+
+.information-text p{
+    margin-top: 10px;
+    font-size: 18px;
+
+}
+
+.information-text strong{
+    font-size: 25px;
+    color: deepskyblue;
+}
+
+.picture ul{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.picture img{
+    max-width: 375px;
+    max-height: 450px;
+    border-radius: 18px 18px 18px 18px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
 
 /* Contact */
 .contact-article{
     width: 100%;
-    height: 2150px;
+    height: 2400px;
   }
   
   
@@ -337,7 +451,8 @@ article{
     margin-top: -20px;
     text-align: center;
     color: white;
-    font-size: 15px;
+    font-size: 25px;
+    font-family: 'Dongle', sans-serif;
   }
   
   
@@ -352,14 +467,15 @@ article{
   
   .contact-article .reference ul li p{
     width: 90%;
-    margin-top: 30px;
+    margin-top: 10px;
     color: white;
     margin-left: 20px;
-    font-size: 15px;
+    font-size: 25px;
+    font-family: 'Dongle', sans-serif;
   }
   
   .contact-article .reference ul li strong{
-    color: #E8637B;
+    color: rgb(197, 94, 111);
   }
   
   
@@ -392,18 +508,17 @@ article{
     .hero h1{
         font-size: 80px;
         position: relative;
-        top:130px;
+        top:220px;
         margin-left: 50px;
-        color: white;
+        
     
     }
     
     .hero h2{ 
         font-size: 60px;
         position: relative;
-        top:120px;
+        top:220px;
         margin-left: 50px;
-        color: white;
     
     }
 
@@ -413,6 +528,7 @@ article{
         font-size: 25px;
         margin-top: 40px;
         color: white;
+        font-family: 'Dongle', sans-serif;
     }
 
     .card-container{
@@ -422,18 +538,18 @@ article{
     }
 
 
-
-    .contact-article .reference ul li p{
-        width: 100%;
-        /* margin-left: 20px; */
-        margin-top: 30px;
-        color: white;
-        font-size: 20px;
+    .contact-article h1{
+  
         text-align: center;
+        max-width: 100%;
+        height: 30px;
+        font-size: 50px;
+        color: white;
+        margin-top: 50px;
+      
       }
 
-
-        
+            
   .contact-article .contact  ul li p{
     width: 100%;
     position: relative;
@@ -441,19 +557,20 @@ article{
     margin-top: -20px;
     text-align: center;
     color: white;
-    font-size: 20px;
+    font-size: 28px;
+
   }
-  
-  .contact-article h1{
-  
-    text-align: center;
-    max-width: 100%;
-    height: 30px;
-    font-size: 50px;
-    color: white;
-    margin-top: 50px;
-  
-  }
+
+
+
+    .contact-article .reference ul li p{
+        width: 100%;
+        /* margin-left: 20px; */
+        margin-top: 30px;
+        color: white;
+        font-size: 28px;
+        text-align: center;
+      }
 
 
 }
@@ -462,9 +579,8 @@ article{
 /* laptop layout */
 @media screen and (min-width: 1440px) and (max-width:1440px){
 
-    article{
+    .index{
         width: 100%;
-        padding-right: 120px;
         height: 2400px;
         border-style: hidden solid hidden solid;
         border-color: rgb(255, 154, 204);
@@ -486,10 +602,7 @@ article{
     .hero{
 
         margin-top: 4px;
-        background-image: url(imgs/brisbane-1440.jpeg);
-        /* max-width: 100%; */
         height: 600px;
-        margin-left: 120px; 
         
     }
 
@@ -515,9 +628,10 @@ article{
     .introduction p{
         margin-left: 180px;
         width: 80%;
-        font-size: 20px;
+        font-size: 40px;
         margin-top: 40px;
         color: white;
+        font-family: 'Dongle', sans-serif;
     }
     
     .introduction h2{
@@ -536,7 +650,7 @@ article{
         margin-top: 100px;
         text-align: center;
         max-width: 800px;
-        font-size: 20px;
+        font-size: 28px;
         margin-left: 300px;
 
     }
@@ -546,19 +660,52 @@ article{
         margin-top: 100px;
         text-align: center;
         max-width: 800px;
-        font-size: 20px;
+        font-size: 28px;
         margin-left: 300px;
     }
 
 
+    .detail-article{
+        height: 1300px;
+    }
+
+
+
+    .detail-article h1{
+        text-align: center;
+        margin-top: 50px;
+        color: white;
+        font-size: 60px;
+        margin-bottom: 70px;
+    }
+
+    .detail-article h2{
+        font-size: 60px;
+    }
+
+
+
+    .picture{
+        margin-left: 50px;
+    }
+
+
+    .picture img{
+        margin-bottom: 30px;
+        margin-left: 50px;
+    }
+    
+
+    
 
     .contact-article .reference ul li p{
         width: 100%;
         /* margin-left: 20px; */
         margin-top: 30px;
         color: white;
-        font-size: 20px;
+        font-size: 30px;
         text-align: center;
+        font-family: 'Dongle', sans-serif;
       }
     
 
@@ -570,7 +717,8 @@ article{
     margin-top: -20px;
     text-align: center;
     color: white;
-    font-size: 20px;
+    font-size: 35px;
+    font-family: 'Dongle', sans-serif;
   }
 
 
@@ -585,6 +733,7 @@ article{
   
   }
   
+
 
     
 
