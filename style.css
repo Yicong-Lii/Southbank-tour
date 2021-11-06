@@ -77,15 +77,6 @@ nav .nav-left img{
     margin-left: 100px;
 }
 
-header .hr{
-    border: 1px;
-    padding-top: 10px;
-    color: #d0d0d5;
-    border-top: 1px solid rgba(0,0,0,.1);
-    box-shadow: inset 0 10px 10px -10px;
-}
-
-
 
 
 
@@ -120,14 +111,16 @@ footer ul li img{
 }
 
 
+
+
+
+
+
 /* Index --- main */
-
-
 article{
 
     background-color: deepskyblue;
     height: 3000px;
-
 
 }
 
@@ -162,10 +155,8 @@ article{
 
 }
 
-
-
 .introduction p{
-    margin-left: 50px;
+    margin-left: 40px;
     margin-bottom: 50px;
     width: 80%;
     font-size: 15px;
@@ -176,40 +167,17 @@ article{
 .introduction h2{
     color: white;
     margin-top: 80px;
-    font-size: 70px;
+    font-size: 50px;
     text-align: center;
 }
 
 
 
-/* scenic-headin */
-
-
-.scenic-heading h2{
-
-    position: relative;
-    color: white;
-    text-align: center;
-    font-size: 70px;
-    top:50px;
-}
 
 
 
 
-
-.food-heading h2{
-
-    position: relative;
-    color: white;
-    text-align: center;
-    font-size: 70px;
-    margin-top: 50px;
-    top:50px;
-}
-
-
-
+/* card layout */
 .card-container{
     margin-top: 50px;
     display: flex;
@@ -228,8 +196,13 @@ article{
 
 }
 
+.card h2{
+    text-align: center;
+}
+
 .card p{
     margin-top: 15px;
+    text-align: center;
 }
 
 .card-image{
@@ -240,11 +213,169 @@ article{
     margin-bottom: 20px;
 }
 
+.card a{
+    background-color: deepskyblue;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+}
+
+
+
+
+
+
+
+
+/* scenic and food */
+.scenic-food-containers h2{
+
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    top:50px;
+}
+
+.scenic-food-containers .scenic-para{
+    color: white;
+    margin-top: 100px;
+    text-align: left;
+    max-width: 800px;
+    font-size: 15px;
+    /* padding-bottom: 100px; */
+    margin-left: 20px;
+    /* text-align: center; */
+}
+
+.scenic-food-containers .food-para{
+    color: white;
+    margin-top: 100px;
+    text-align: left;
+    max-width: 800px;
+    font-size: 15px;
+    /* padding-bottom: 100px; */
+    margin-left: 20px;
+    /* text-align: center; */
+}
+
+.scenic-food-containers h3{
+    text-align: center;
+}
+
+
+
+
+/* location information */
+.location-information{
+    height: 1500px;
+}
+
+.location-information h1{
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    font-size: 40px;
+}
+
+.location-information .information{
+
+}
+
+.location-information h2{
+
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    font-size: 40px;
+    
+}
+
+
+/* Contact */
+.contact-article{
+    width: 100%;
+    height: 2150px;
+  }
+  
+  
+  .contact-article h1{
+  
+    text-align: center;
+    max-width: 100%;
+    height: 30px;
+    font-size: 40px;
+    color: white;
+    margin-top: 50px;
+    /* padding: 2em; */
+  
+  }
+  
+  .contact-article .contact ul li img{
+ 
+    height: 100px;
+    position: relative;
+    margin-bottom: 40px;
+    margin-top: 80px;
+    align-items: center;
+    text-align: center;
+  }
+  
+
+  .center {
+    display: block;
+    margin: 0 auto;
+}
+  
+  
+  .contact-article .contact  ul li p{
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+  }
+  
+  
+  .contact-article .reference h2{
+    text-align: center;
+    font-size: 40px;
+    padding: 30px;
+    background-image: url(img/contact/reference-background.jpeg);
+    margin-top: 150px;
+    color: white;
+  }
+  
+  .contact-article .reference ul li p{
+    width: 90%;
+    margin-top: 30px;
+    color: white;
+    margin-left: 20px;
+    font-size: 15px;
+  }
+  
+  .contact-article .reference ul li strong{
+    color: #E8637B;
+  }
+  
+  
+  
+
+
+
+
+
 
 /* ipad layout */
 @media screen and (min-width: 768px) and (max-width:768px){
 
-
+    article{
+        height: 2100px;
+    }
 
     nav .nav-right ul{
         margin-right: 100px;
@@ -289,6 +420,40 @@ article{
         justify-content: space-evenly;
         flex-wrap: wrap;
     }
+
+
+
+    .contact-article .reference ul li p{
+        width: 100%;
+        /* margin-left: 20px; */
+        margin-top: 30px;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+      }
+
+
+        
+  .contact-article .contact  ul li p{
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .contact-article h1{
+  
+    text-align: center;
+    max-width: 100%;
+    height: 30px;
+    font-size: 50px;
+    color: white;
+    margin-top: 50px;
+  
+  }
 
 
 }
@@ -354,6 +519,10 @@ article{
         margin-top: 40px;
         color: white;
     }
+    
+    .introduction h2{
+        font-size: 70px;
+    }
 
     .card-container{
         display: flex;
@@ -361,53 +530,62 @@ article{
         flex-wrap: wrap;
     }
 
-    .scenic-heading h2{
 
-        position: relative;
+    .scenic-food-containers .scenic-para{
         color: white;
+        margin-top: 100px;
         text-align: center;
-        font-size: 70px;
-        margin-bottom: 100px;
-        top:50px;
-    } 
-    
-    .food-heading h2{
-    
-        position: relative;
-        color: white;
-        text-align: center;
-        font-size: 70px;
-        margin-bottom: 100px;
-        top:50px;
+        max-width: 800px;
+        font-size: 20px;
+        margin-left: 300px;
+
     }
     
+    .scenic-food-containers .food-para{
+        color: white;
+        margin-top: 100px;
+        text-align: center;
+        max-width: 800px;
+        font-size: 20px;
+        margin-left: 300px;
+    }
+
+
+
+    .contact-article .reference ul li p{
+        width: 100%;
+        /* margin-left: 20px; */
+        margin-top: 30px;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+      }
+    
+
+        
+  .contact-article .contact  ul li p{
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+  }
+
+
+  .contact-article h1{
+  
+    text-align: center;
+    max-width: 100%;
+    height: 30px;
+    font-size: 50px;
+    color: white;
+    margin-top: 50px;
+  
+  }
+  
 
     
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* index.html --- introduction */
-
-
-
-
-
