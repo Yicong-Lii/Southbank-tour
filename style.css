@@ -3,6 +3,10 @@
 
 
 
+
+
+
+
 *{
     padding: 0px;
     margin: 0px;  
@@ -19,8 +23,13 @@ body{
 
 }
 
-/* header and nav */
 
+
+
+
+
+
+/* header and nav */
 header{
     background: pink;
 }
@@ -71,8 +80,6 @@ nav .nav-right ul li:hover{
 
 }
 
-
-
 nav .nav-left img{
     max-width: 150px;
     max-height: 150px;
@@ -82,8 +89,16 @@ nav .nav-left img{
 
 
 
-/* footer */
 
+
+
+
+
+
+
+
+
+/* footer */
 footer{
     margin-top: 3px;
     width: 100%;
@@ -106,13 +121,16 @@ footer ul{
 
 footer ul li{
     display: inline-block;
-    margin-right: 25px;
+    margin-left: 25px;
 }
 
 footer ul li img{
     width: 25px;
     height: 25px;
 }
+
+
+
 
 
 
@@ -157,9 +175,10 @@ footer ul li img{
 
 
 
+
+
+/* index.html */
 .hero{
-
-
     
     background-image: url(imgs/hero.jpeg);
     max-width: 100%;
@@ -189,7 +208,6 @@ footer ul li img{
 
 }
 
-
 .introduction p{
     margin-left: 40px;
     margin-bottom: 50px;
@@ -213,11 +231,12 @@ footer ul li img{
 
 
 
+
 /* card layout */
 .card-container{
     margin-top: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 
 }
@@ -232,8 +251,8 @@ footer ul li img{
 
 }
 
-.card h2{
-    text-align: center;
+.card h3{
+    font-size: 18px;
 }
 
 .card p{
@@ -244,11 +263,14 @@ footer ul li img{
 
 .card-image{
     background-image: url(imgs/background-3.jpeg);
+    width: 300px;
     height: 300px;
     border-top-left-radius: 18px;
     border-top-right-radius: 18px;
     margin-bottom: 20px;
 }
+
+
 
 .card a{
     background-color: deepskyblue;
@@ -267,7 +289,7 @@ footer ul li img{
 
 
 /* scenic and food */
-.scenic-food-containers h2{
+.scenic-food-containers h1{
 
     position: relative;
     color: white;
@@ -276,7 +298,7 @@ footer ul li img{
     top:50px;
 }
 
-.scenic-food-containers .scenic-para{
+.scenic-food-containers p{
     color: white;
     margin-top: 100px;
     text-align: left;
@@ -288,7 +310,7 @@ footer ul li img{
     /* text-align: center; */
 }
 
-.scenic-food-containers .food-para{
+.scenic-food-containers p{
     color: white;
     margin-top: 100px;
     text-align: left;
@@ -304,8 +326,17 @@ footer ul li img{
     text-align: center;
 }
 
+.scenic-food-containers h2{
+    text-align: center;
+    color: white;
+    font-size: 80px;
+    margin-top: 40px;
+}
 
 
+.scenic-food-containers h4{
+    text-align: center;
+}
 
 
 
@@ -395,7 +426,7 @@ footer ul li img{
 
 .picture img{
     max-width: 375px;
-    max-height: 450px;
+    max-height: 475px;
     border-radius: 18px 18px 18px 18px;
     margin-top: 20px;
 }
@@ -486,13 +517,30 @@ footer ul li img{
 
 
 
+
+
+
 /* ipad layout */
 @media screen and (min-width: 768px) and (max-width:768px){
 
-    article{
+    /* all pages for all ipad */
+    .index{
         height: 2100px;
     }
 
+
+    .scenic-food-article{
+        height: 1000px;
+    }
+
+    .detail-article{
+        height: 1250px;
+    }
+    
+
+
+
+    /* navigation */
     nav .nav-right ul{
         margin-right: 100px;
         margin-top: 65px;
@@ -501,17 +549,17 @@ footer ul li img{
     nav .nav-right ul li{
         font-size: 22px;
         margin-top: 10px;
-        /* margin-right: 5px; */
-
     }
 
+
+
+
+    /* index.html */
     .hero h1{
         font-size: 80px;
         position: relative;
         top:220px;
-        margin-left: 50px;
-        
-    
+        margin-left: 50px; 
     }
     
     .hero h2{ 
@@ -524,20 +572,14 @@ footer ul li img{
 
     .introduction p{
         margin-left: 80px;
-        width: 80%;
-        font-size: 25px;
-        margin-top: 40px;
-        color: white;
-        font-family: 'Dongle', sans-serif;
-    }
-
-    .card-container{
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+        font-size: 28px;
     }
 
 
+
+
+    
+    /* card layout */
     .contact-article h1{
   
         text-align: center;
@@ -547,7 +589,7 @@ footer ul li img{
         color: white;
         margin-top: 50px;
       
-      }
+    }
 
             
   .contact-article .contact  ul li p{
@@ -570,7 +612,7 @@ footer ul li img{
         color: white;
         font-size: 28px;
         text-align: center;
-      }
+    }
 
 
 }
@@ -579,6 +621,8 @@ footer ul li img{
 /* laptop layout */
 @media screen and (min-width: 1440px) and (max-width:1440px){
 
+
+    /* all pages for laptop (article) */
     .index{
         width: 100%;
         height: 2400px;
@@ -586,7 +630,32 @@ footer ul li img{
         border-color: rgb(255, 154, 204);
     }
 
+    .contact-article h1{
+    
+        text-align: center;
+        max-width: 100%;
+        height: 30px;
+        font-size: 50px;
+        color: white;
+        margin-top: 50px; 
+    } 
 
+
+    .scenic-food-article{
+
+        height: 1050px;
+    }
+
+    .detail-article{
+        height: 1550px;
+    }
+
+
+
+
+
+
+    /* navigation */
     nav .nav-right ul{
         margin-right: 150px;
         margin-top: 60px;
@@ -599,6 +668,13 @@ footer ul li img{
     }
 
 
+
+
+
+
+
+
+    /* index.html */
     .hero{
 
         margin-top: 4px;
@@ -638,14 +714,24 @@ footer ul li img{
         font-size: 70px;
     }
 
+
+
+
+
+
+
+
+    /* card layout */
     .card-container{
-        display: flex;
+        /* display: flex; */
         justify-content: space-around;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
     }
 
 
-    .scenic-food-containers .scenic-para{
+    /* scenic-food-layout */
+
+    .scenic-food-containers p{
         color: white;
         margin-top: 100px;
         text-align: center;
@@ -654,29 +740,20 @@ footer ul li img{
         margin-left: 300px;
 
     }
-    
-    .scenic-food-containers .food-para{
-        color: white;
-        margin-top: 100px;
-        text-align: center;
-        max-width: 800px;
-        font-size: 28px;
-        margin-left: 300px;
-    }
-
-
-    .detail-article{
-        height: 1300px;
-    }
 
 
 
+
+
+
+
+    /* detail layerout */
     .detail-article h1{
         text-align: center;
         margin-top: 50px;
         color: white;
         font-size: 60px;
-        margin-bottom: 70px;
+        margin-bottom: 100px;
     }
 
     .detail-article h2{
@@ -686,55 +763,32 @@ footer ul li img{
 
 
     .picture{
-        margin-left: 50px;
-    }
-
-
-    .picture img{
-        margin-bottom: 30px;
-        margin-left: 50px;
+        padding: 30px 170px;
     }
     
 
-    
 
+
+
+    /* about.html */
+    .contact-article .contact  ul li p{
+        width: 100%;
+        position: relative;
+        margin-bottom: 20px;
+        margin-top: -20px;
+        text-align: center;
+        color: white;
+        font-size: 35px;
+        font-family: 'Dongle', sans-serif;
+    }
+    
     .contact-article .reference ul li p{
         width: 100%;
-        /* margin-left: 20px; */
         margin-top: 30px;
         color: white;
         font-size: 30px;
         text-align: center;
         font-family: 'Dongle', sans-serif;
-      }
-    
-
-        
-  .contact-article .contact  ul li p{
-    width: 100%;
-    position: relative;
-    margin-bottom: 20px;
-    margin-top: -20px;
-    text-align: center;
-    color: white;
-    font-size: 35px;
-    font-family: 'Dongle', sans-serif;
-  }
-
-
-  .contact-article h1{
-  
-    text-align: center;
-    max-width: 100%;
-    height: 30px;
-    font-size: 50px;
-    color: white;
-    margin-top: 50px;
-  
-  }
-  
-
-
-    
+    }
 
 }
