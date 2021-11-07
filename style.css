@@ -364,7 +364,7 @@ footer ul li img{
 
 /* detail */
 .detail-article{
-    height: 2000px;
+    height: 2350px;
 }
 
 
@@ -544,7 +544,7 @@ footer ul li img{
 
     /* all pages for all ipad */
     .index{
-        height: 2100px;
+        height: 2150px;
     }
 
 
@@ -553,7 +553,7 @@ footer ul li img{
     }
 
     .detail-article{
-        height: 1250px;
+        height: 1350px;
     }
     
 
@@ -610,8 +610,12 @@ footer ul li img{
       
     }
 
-            
-  .contact-article .contact  ul li p{
+      
+    
+
+
+    /* contact information */
+    .contact-article .contact  ul li p{
     width: 100%;
     position: relative;
     margin-bottom: 20px;
@@ -620,7 +624,7 @@ footer ul li img{
     color: white;
     font-size: 28px;
 
-  }
+    }
 
 
 
@@ -748,8 +752,11 @@ footer ul li img{
     }
 
 
-    /* scenic-food-layout */
 
+
+
+
+    /* scenic-food-layout */
     .scenic-food-containers p{
         color: white;
         margin-top: 100px;
